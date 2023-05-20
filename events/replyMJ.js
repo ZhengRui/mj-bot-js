@@ -1,5 +1,5 @@
 const { Events } = require("discord.js");
-const MJID = "936929561302675456";
+const MJID = process.env.MJID || require("../config.json").MJID;
 const { upscale, variation } = require("../utils.js");
 
 module.exports = {
